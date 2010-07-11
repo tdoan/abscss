@@ -5,14 +5,15 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "abscss"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Reduce an HTML page into CSS selectors}
+    gem.description = %Q{Breadth first search an HTML page and spit out all the branches of the tree as CSS selectors. Simple filtering is currently hardcoded to ignore HTML tags that we don't style.}
     gem.email = "tdoan@tdoan.com"
     gem.homepage = "http://github.com/tdoan/abscss"
     gem.authors = ["Tony Doan"]
+    gem.add_runtime_dependency "nokogiri"
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
-  end
+    gem.files = %w{LICENSE ReADME.rdoc Rakefile VERSION lib/abscss.rb lib/cli.rb bin/abscss}
+    end
   Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"

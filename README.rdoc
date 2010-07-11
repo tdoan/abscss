@@ -1,16 +1,12 @@
 = abscss
 
-Description goes here.
+Breadth first search an HTML page and spit out all the branches of the tree as CSS selectors. Simple filtering is currently hardcoded to ignore HTML tags that we don't style.
 
-== Note on Patches/Pull Requests
+== Notes
  
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+Inspired by Russ Russ Weakley's explanation of how he gets started adding style to semantically marked up HTML document.
+
+If you find this at all useful please submit feature requests. Right now it's pretty simplistic. One idea was to add spidering so you could build selectors up over an entire site.
 
 == Copyright
 
