@@ -21,7 +21,9 @@ module Abscss
     end
 
     def output
-      @selectors.keys.join("\n")
+      @selectors.keys.collect do |selector|
+        selector + " {}"
+      end
     end
   end
 end
